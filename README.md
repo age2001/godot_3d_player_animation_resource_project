@@ -1,0 +1,1 @@
+# godot_3d_player_animation_resource_project
