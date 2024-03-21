@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm2upbcdiltan"]
+
+[ext_resource type="PackedScene" uid="uid://5cqtepuevr6i" path="res://player.tscn" id="1_x1wiu"]
+[ext_resource type="PackedScene" uid="uid://ca30mkc5gwhtg" path="res://ground.tscn" id="2_oc3ic"]
+[ext_resource type="Script" path="res://main_camera.gd" id="3_ud4ay"]
+
+[node name="Main" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_x1wiu")]
+
+[node name="Ground" parent="." instance=ExtResource("2_oc3ic")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+script = ExtResource("3_ud4ay")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0)

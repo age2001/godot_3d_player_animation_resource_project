@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5q3kswq1yxb2"]
+
+[ext_resource type="PackedScene" uid="uid://bam2f0dnefcqi" path="res://blender_models/LowPolyGirl.blend" id="1_d2d56"]
+
+[node name="LowPolyGirl" instance=ExtResource("1_d2d56")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/0/rotation = Quaternion(-0.0130337, -4.76139e-19, -4.76139e-19, 0.999915)
+bones/1/rotation = Quaternion(0.0797481, 1.1883e-07, 9.50671e-09, 0.996815)
+bones/2/rotation = Quaternion(-0.0102425, 0.00400167, 0.936777, -0.349755)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/rotation = Quaternion(-0.0213753, -3.13306e-05, -0.0296196, 0.999333)
+bones/4/rotation = Quaternion(0.000528422, 0.0125601, 0.999894, -0.00740551)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/rotation = Quaternion(-0.110245, 0.00142962, -0.00976909, 0.993855)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/rotation = Quaternion(0.0102425, 0.00400167, 0.936777, 0.349755)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-0.0213753, 3.13306e-05, 0.0296196, 0.999333)
+bones/9/rotation = Quaternion(-0.000528422, 0.0125601, 0.999894, 0.00740551)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/rotation = Quaternion(-0.110245, -0.00142962, 0.00976909, 0.993855)
+bones/11/scale = Vector3(1, 1, 1)
+bones/12/rotation = Quaternion(0.0097861, 0.707039, 0.707039, 0.0097861)
+bones/12/scale = Vector3(1, 1, 1)
+bones/13/rotation = Quaternion(0.00185278, 0.714923, -0.699198, -0.00189445)
+bones/13/scale = Vector3(1, 1, 1)
+bones/14/rotation = Quaternion(-0.0097861, 0.707039, 0.707039, -0.0097861)
+bones/14/scale = Vector3(1, 1, 1)
+bones/15/rotation = Quaternion(-0.00185278, 0.714923, -0.699198, 0.00189445)
+bones/15/scale = Vector3(1, 1, 1)

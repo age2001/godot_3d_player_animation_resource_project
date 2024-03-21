@@ -1,0 +1,7 @@
+{
+    "godotTools.editorPath.godot4": "d:\\Users\\Alan\\Documents\\GameDev\\Godot_v4.2.1\\Godot_v4.2.1-stable_win64.exe",
+    "files.exclude": {
+        "**/*.import": true,
+        "**/*.tmp": true
+    }
+}

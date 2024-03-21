@@ -1,0 +1,100 @@
+[gd_scene load_steps=11 format=3 uid="uid://d26teifdgjcjv"]
+
+[ext_resource type="Script" path="res://player/player_body.gd" id="1_p1vi5"]
+[ext_resource type="PackedScene" uid="uid://b5q3kswq1yxb2" path="res://player/low_poly_girl.tscn" id="2_nn7px"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g16h2"]
+
+[sub_resource type="MultiMesh" id="MultiMesh_lphs5"]
+transform_format = 1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_unepf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0p6p4"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_68fvu"]
+viewport_path = NodePath("FloatingHealthBar/SubViewport")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtmhp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ih7su"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tvpsh"]
+bg_color = Color(0.360784, 0.690196, 0.352941, 1)
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_layer = 2
+script = ExtResource("1_p1vi5")
+MAX_WALK = 4.0
+MAX_RUN = 8.0
+SPRINT_STAMINA_USE = 2.0
+HUNGER_RATE = 0.5
+RUN_ANIMATION_SPEED_SCALE = 1.75
+IDLE_ANIMATION_SPEED_SCALE = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_g16h2")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="Pivot"]
+visible = false
+multimesh = SubResource("MultiMesh_lphs5")
+
+[node name="Body" type="MeshInstance3D" parent="Pivot/MultiMeshInstance3D"]
+mesh = SubResource("CapsuleMesh_unepf")
+skeleton = NodePath("../..")
+
+[node name="RightHand" type="MeshInstance3D" parent="Pivot/MultiMeshInstance3D"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.5, 0, -0.5)
+mesh = SubResource("BoxMesh_0p6p4")
+skeleton = NodePath("../..")
+
+[node name="LeftHand" type="MeshInstance3D" parent="Pivot/MultiMeshInstance3D"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.5, 0, -0.5)
+mesh = SubResource("BoxMesh_0p6p4")
+skeleton = NodePath("../..")
+
+[node name="LowPolyGirl" parent="Pivot" instance=ExtResource("2_nn7px")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -1, 0)
+
+[node name="FloatingHealthBar" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0)
+visible = false
+billboard = 1
+texture = SubResource("ViewportTexture_68fvu")
+
+[node name="SubViewport" type="SubViewport" parent="FloatingHealthBar"]
+transparent_bg = true
+size = Vector2i(232, 92)
+
+[node name="Panel" type="Panel" parent="FloatingHealthBar/SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_rtmhp")
+
+[node name="ProgressBar" type="ProgressBar" parent="FloatingHealthBar/SubViewport/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.5
+anchor_right = 0.958
+anchor_bottom = 0.5
+offset_left = -0.0640011
+offset_top = -13.0
+offset_right = 0.0639954
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ih7su")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tvpsh")
+value = 100.0
+
+[node name="StaminaCooldown" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="StaminaCooldown" to="." method="_on_stamina_cooldown_timeout"]
