@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://djlrh2feidxq4"]
+
+[ext_resource type="PackedScene" uid="uid://jbkhnvewlc8h" path="res://addons/kaykit_city_builder_bits/Assets/gltf/road_junction.gltf" id="1_apd6x"]
+
+[node name="road_junction2" instance=ExtResource("1_apd6x")]

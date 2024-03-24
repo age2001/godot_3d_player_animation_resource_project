@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://fbq22ihu4ko5"]
+
+[ext_resource type="PackedScene" uid="uid://co73xosxohxs8" path="res://addons/kaykit_city_builder_bits/Assets/gltf/streetlight.gltf" id="1_yo08x"]
+
+[node name="streetlight2" instance=ExtResource("1_yo08x")]

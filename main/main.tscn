@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm2upbcdiltan"]
+[gd_scene load_steps=5 format=3 uid="uid://dm2upbcdiltan"]
 
+[ext_resource type="PackedScene" uid="uid://bhfy3p4pn7q41" path="res://environments/main_city/city_demo.tscn" id="1_ddk0j"]
 [ext_resource type="PackedScene" uid="uid://d26teifdgjcjv" path="res://player/player.tscn" id="1_ljgbm"]
 [ext_resource type="PackedScene" uid="uid://c7slg3lkmxhhf" path="res://camera/main_camera.tscn" id="2_dkm56"]
-[ext_resource type="PackedScene" uid="uid://ca30mkc5gwhtg" path="res://ground/ground.tscn" id="2_oc3ic"]
+[ext_resource type="AudioStream" uid="uid://cus1cnohsfqsp" path="res://music/color_your_night.mp3" id="5_2mh78"]
 
 [node name="Main" type="Node"]
 
@@ -11,11 +12,15 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 12,
 layers = 0
 shadow_enabled = true
 
-[node name="Ground" parent="." instance=ExtResource("2_oc3ic")]
+[node name="CityDemo" parent="." instance=ExtResource("1_ddk0j")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, -8, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_ljgbm")]
 
 [node name="MainCamera" parent="Player" instance=ExtResource("2_dkm56")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 current = true
-camera_offset = Vector3(0, 4, 4)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_2mh78")
+volume_db = -16.808

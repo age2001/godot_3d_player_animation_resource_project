@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @onready var animation_player : AnimationPlayer = $Pivot/LowPolyGirl/AnimationPlayer
+@onready var main_camera : Camera3D = $MainCamera
 
 # TODO Change from export to const variables
 @export var MAX_WALK: float = 10.0 # Good walk is 2.6

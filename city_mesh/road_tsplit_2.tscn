@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://djk5nd0a8jghd"]
+
+[ext_resource type="PackedScene" uid="uid://civnvbd4f4hbx" path="res://addons/kaykit_city_builder_bits/Assets/gltf/road_tsplit.gltf" id="1_ta0ia"]
+
+[node name="road_tsplit2" instance=ExtResource("1_ta0ia")]

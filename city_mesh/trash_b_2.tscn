@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkeax15m5y2sv"]
+
+[ext_resource type="PackedScene" uid="uid://c588210jh1ibh" path="res://addons/kaykit_city_builder_bits/Assets/gltf/trash_B.gltf" id="1_f3x6v"]
+
+[node name="trash_B2" instance=ExtResource("1_f3x6v")]

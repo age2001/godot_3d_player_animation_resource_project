@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdcrsq1c5af4f"]
+
+[ext_resource type="PackedScene" uid="uid://bvlh5vjs7akaj" path="res://addons/kaykit_city_builder_bits/Assets/gltf/bench.gltf" id="1_op4xn"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a3d8n"]
+points = PackedVector3Array(-0.172905, 0.0599941, -0.075, -0.148943, 0, -0.0469121, -0.2, 0.0599941, -0.0478812, -0.172905, 0.1, -0.075, 0.172827, 0.0599941, -0.075, -0.148943, 0, 0.0468952, 0.148865, 0, -0.0469121, -0.2, 0.1, -0.0478812, -0.2, 0.0599941, 0.0478642, 0.172827, 0.1, -0.075, 0.2, 0.0599941, -0.0478812, -0.172905, 0.0599941, 0.0749977, 0.148865, 0, 0.0468952, -0.2, 0.1, 0.0478642, 0.2, 0.1, -0.0478812, 0.2, 0.0599941, 0.0478642, -0.172905, 0.1, 0.0749977, 0.172827, 0.0599941, 0.0749977, 0.2, 0.1, 0.0478642, 0.172827, 0.1, 0.0749977)
+
+[node name="bench2" instance=ExtResource("1_op4xn")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_a3d8n")

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc0kijj01ni5t"]
+
+[ext_resource type="PackedScene" uid="uid://dow5dpu7tyy3f" path="res://addons/kaykit_city_builder_bits/Assets/gltf/building_C_withoutBase.gltf" id="1_b0hoo"]
+
+[node name="building_C_withoutBase2" instance=ExtResource("1_b0hoo")]

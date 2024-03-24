@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnx1d6ctknhtf"]
+
+[ext_resource type="PackedScene" uid="uid://cmcnp0n17s7v0" path="res://addons/kaykit_city_builder_bits/Assets/gltf/bush.gltf" id="1_xbftf"]
+
+[node name="bush2" instance=ExtResource("1_xbftf")]

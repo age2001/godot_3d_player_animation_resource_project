@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://tokvph7gvlw3"]
+
+[ext_resource type="PackedScene" uid="uid://ctbv7fsuwdbyl" path="res://addons/kaykit_city_builder_bits/Assets/gltf/base.gltf" id="1_5koyl"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_frxkv"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 0.999979, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 0.999979, 1, 0, 0.999979, 1, 0.0999902, -1, 1, 0.0999902, 0.999979)
+
+[node name="base2" instance=ExtResource("1_5koyl")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="base" index="0"]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_frxkv")

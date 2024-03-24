@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbgejfsk2hk7n"]
+
+[ext_resource type="PackedScene" uid="uid://b6xqk5f0rq3iv" path="res://addons/kaykit_city_builder_bits/Assets/gltf/trafficlight_A.gltf" id="1_a4tlk"]
+
+[node name="trafficlight_A2" instance=ExtResource("1_a4tlk")]

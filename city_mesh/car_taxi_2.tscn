@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c12crf7erqfb4"]
+
+[ext_resource type="PackedScene" uid="uid://bg34d5lm1fxj3" path="res://addons/kaykit_city_builder_bits/Assets/gltf/car_taxi.gltf" id="1_f3q4w"]
+
+[node name="car_taxi2" instance=ExtResource("1_f3q4w")]

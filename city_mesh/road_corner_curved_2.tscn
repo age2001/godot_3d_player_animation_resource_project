@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3qe0yp08vwbp"]
+
+[ext_resource type="PackedScene" uid="uid://bw8fdokpqbqgy" path="res://addons/kaykit_city_builder_bits/Assets/gltf/road_corner_curved.gltf" id="1_5part"]
+
+[node name="road_corner_curved2" instance=ExtResource("1_5part")]

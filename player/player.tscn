@@ -1,16 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://d26teifdgjcjv"]
+[gd_scene load_steps=8 format=3 uid="uid://d26teifdgjcjv"]
 
 [ext_resource type="Script" path="res://player/player_body.gd" id="1_p1vi5"]
 [ext_resource type="PackedScene" uid="uid://b5q3kswq1yxb2" path="res://player/low_poly_girl.tscn" id="2_nn7px"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g16h2"]
-
-[sub_resource type="MultiMesh" id="MultiMesh_lphs5"]
-transform_format = 1
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_unepf"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_0p6p4"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_68fvu"]
 viewport_path = NodePath("FloatingHealthBar/SubViewport")
@@ -37,24 +30,6 @@ IDLE_ANIMATION_SPEED_SCALE = 0.5
 shape = SubResource("CapsuleShape3D_g16h2")
 
 [node name="Pivot" type="Node3D" parent="."]
-
-[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="Pivot"]
-visible = false
-multimesh = SubResource("MultiMesh_lphs5")
-
-[node name="Body" type="MeshInstance3D" parent="Pivot/MultiMeshInstance3D"]
-mesh = SubResource("CapsuleMesh_unepf")
-skeleton = NodePath("../..")
-
-[node name="RightHand" type="MeshInstance3D" parent="Pivot/MultiMeshInstance3D"]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.5, 0, -0.5)
-mesh = SubResource("BoxMesh_0p6p4")
-skeleton = NodePath("../..")
-
-[node name="LeftHand" type="MeshInstance3D" parent="Pivot/MultiMeshInstance3D"]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.5, 0, -0.5)
-mesh = SubResource("BoxMesh_0p6p4")
-skeleton = NodePath("../..")
 
 [node name="LowPolyGirl" parent="Pivot" instance=ExtResource("2_nn7px")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -1, 0)

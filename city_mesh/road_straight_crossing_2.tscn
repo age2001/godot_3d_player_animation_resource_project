@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://uceeuhk71he3"]
+
+[ext_resource type="PackedScene" uid="uid://nqqria8y84pv" path="res://addons/kaykit_city_builder_bits/Assets/gltf/road_straight_crossing.gltf" id="1_hy4y8"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8julp"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 0.999979, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 0.999979, 1, 0, 0.999979, 1, 0.0999902, -1, 1, 0.0999902, 0.999979)
+
+[node name="road_straight_crossing2" instance=ExtResource("1_hy4y8")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_8julp")

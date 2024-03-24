@@ -1,0 +1,127 @@
+[gd_scene load_steps=42 format=3 uid="uid://b1afjj6emxejl"]
+
+[ext_resource type="PackedScene" uid="uid://tokvph7gvlw3" path="res://city_mesh/base_2.tscn" id="1_riu8m"]
+[ext_resource type="PackedScene" uid="uid://bdcrsq1c5af4f" path="res://city_mesh/bench_2.tscn" id="2_y3yga"]
+[ext_resource type="PackedScene" uid="uid://b6s77mabgygke" path="res://city_mesh/box_a_2.tscn" id="3_w6rj6"]
+[ext_resource type="PackedScene" uid="uid://cxj0e16xv642m" path="res://city_mesh/box_b_2.tscn" id="4_ocg1n"]
+[ext_resource type="PackedScene" uid="uid://ds0khxnemg05c" path="res://city_mesh/building_a_2.tscn" id="5_3ernf"]
+[ext_resource type="PackedScene" uid="uid://cutb04j30kt5f" path="res://city_mesh/building_a_without_base_2.tscn" id="6_7swti"]
+[ext_resource type="PackedScene" uid="uid://ccg780g24aup4" path="res://city_mesh/building_b_2.tscn" id="7_x766a"]
+[ext_resource type="PackedScene" uid="uid://xlmsyuy7fr8a" path="res://city_mesh/building_b_without_base_2.tscn" id="8_gxyqa"]
+[ext_resource type="PackedScene" uid="uid://dpomev6vt5eyl" path="res://city_mesh/building_c_2.tscn" id="9_ib8pr"]
+[ext_resource type="PackedScene" uid="uid://dc0kijj01ni5t" path="res://city_mesh/building_c_without_base_2.tscn" id="10_k02vi"]
+[ext_resource type="PackedScene" uid="uid://c5rspjtrtcgwc" path="res://city_mesh/building_d_2.tscn" id="11_j3r6x"]
+[ext_resource type="PackedScene" uid="uid://dryhink3iy4vf" path="res://city_mesh/building_d_without_base_2.tscn" id="12_6v5lm"]
+[ext_resource type="PackedScene" uid="uid://dgrbfhpdjq8pw" path="res://city_mesh/building_e_2.tscn" id="13_0qdoe"]
+[ext_resource type="PackedScene" uid="uid://bls4igib3kxwl" path="res://city_mesh/building_e_without_base_2.tscn" id="14_n1sx7"]
+[ext_resource type="PackedScene" uid="uid://tcygkvjcmquv" path="res://city_mesh/building_f_2.tscn" id="15_xpgah"]
+[ext_resource type="PackedScene" uid="uid://dubqu6k51thjw" path="res://city_mesh/building_f_without_base_2.tscn" id="16_kp2k4"]
+[ext_resource type="PackedScene" uid="uid://b1d0t0pq283um" path="res://city_mesh/building_g_2.tscn" id="17_flwmx"]
+[ext_resource type="PackedScene" uid="uid://blfru4u6cioqo" path="res://city_mesh/building_g_without_base_2.tscn" id="18_ln3b5"]
+[ext_resource type="PackedScene" uid="uid://cski7gq17rixp" path="res://city_mesh/building_h_2.tscn" id="19_ke17f"]
+[ext_resource type="PackedScene" uid="uid://dkl8s2uyg271q" path="res://city_mesh/building_h_without_base_2.tscn" id="20_scasr"]
+[ext_resource type="PackedScene" uid="uid://cnx1d6ctknhtf" path="res://city_mesh/bush_2.tscn" id="21_ohrqs"]
+[ext_resource type="PackedScene" uid="uid://ddi64gpkkvgib" path="res://city_mesh/car_hatchback_2.tscn" id="22_n8afs"]
+[ext_resource type="PackedScene" uid="uid://ch2jpk86ey02u" path="res://city_mesh/car_police_2.tscn" id="23_5s4rq"]
+[ext_resource type="PackedScene" uid="uid://bqxtpsxh7k1f8" path="res://city_mesh/car_sedan_2.tscn" id="24_h4txs"]
+[ext_resource type="PackedScene" uid="uid://bdirqp03dykxj" path="res://city_mesh/car_stationwagon_2.tscn" id="25_pfx2d"]
+[ext_resource type="PackedScene" uid="uid://c12crf7erqfb4" path="res://city_mesh/car_taxi_2.tscn" id="26_r4fhx"]
+[ext_resource type="PackedScene" uid="uid://fadpfgqcyk8q" path="res://city_mesh/dumpster_2.tscn" id="27_fb6px"]
+[ext_resource type="PackedScene" uid="uid://pp2l5ce3poqq" path="res://city_mesh/firehydrant_2.tscn" id="28_2jpxt"]
+[ext_resource type="PackedScene" uid="uid://3nwc5hyadfn6" path="res://city_mesh/road_corner_2.tscn" id="29_3yeda"]
+[ext_resource type="PackedScene" uid="uid://c3qe0yp08vwbp" path="res://city_mesh/road_corner_curved_2.tscn" id="30_4ikj5"]
+[ext_resource type="PackedScene" uid="uid://djlrh2feidxq4" path="res://city_mesh/road_junction_2.tscn" id="31_2p0ii"]
+[ext_resource type="PackedScene" uid="uid://bi3mt1kxagkr4" path="res://city_mesh/road_straight_2.tscn" id="32_igj1q"]
+[ext_resource type="PackedScene" uid="uid://uceeuhk71he3" path="res://city_mesh/road_straight_crossing_2.tscn" id="33_hht5d"]
+[ext_resource type="PackedScene" uid="uid://djk5nd0a8jghd" path="res://city_mesh/road_tsplit_2.tscn" id="34_wjm7x"]
+[ext_resource type="PackedScene" uid="uid://fbq22ihu4ko5" path="res://city_mesh/streetlight_2.tscn" id="35_kg3f7"]
+[ext_resource type="PackedScene" uid="uid://cbgejfsk2hk7n" path="res://city_mesh/trafficlight_a_2.tscn" id="36_psvwu"]
+[ext_resource type="PackedScene" uid="uid://d10txwnpwethm" path="res://city_mesh/trafficlight_b_2.tscn" id="37_l7y04"]
+[ext_resource type="PackedScene" uid="uid://wtb8ua6q5yc6" path="res://city_mesh/trafficlight_c_2.tscn" id="38_du000"]
+[ext_resource type="PackedScene" uid="uid://bxuq0lgcy2hop" path="res://city_mesh/trash_a_2.tscn" id="39_ywqmc"]
+[ext_resource type="PackedScene" uid="uid://dkeax15m5y2sv" path="res://city_mesh/trash_b_2.tscn" id="40_uyaol"]
+[ext_resource type="PackedScene" uid="uid://4wsqhpslg3t8" path="res://city_mesh/watertower_2.tscn" id="41_13u0f"]
+
+[node name="city_mesh_library" type="Node3D"]
+
+[node name="base2" parent="." instance=ExtResource("1_riu8m")]
+
+[node name="bench2" parent="." instance=ExtResource("2_y3yga")]
+
+[node name="box_A2" parent="." instance=ExtResource("3_w6rj6")]
+
+[node name="box_B2" parent="." instance=ExtResource("4_ocg1n")]
+
+[node name="building_A2" parent="." instance=ExtResource("5_3ernf")]
+
+[node name="building_A_withoutBase2" parent="." instance=ExtResource("6_7swti")]
+
+[node name="building_B2" parent="." instance=ExtResource("7_x766a")]
+
+[node name="building_B_withoutBase2" parent="." instance=ExtResource("8_gxyqa")]
+
+[node name="building_C2" parent="." instance=ExtResource("9_ib8pr")]
+
+[node name="building_C_withoutBase2" parent="." instance=ExtResource("10_k02vi")]
+
+[node name="building_D2" parent="." instance=ExtResource("11_j3r6x")]
+
+[node name="building_D_withoutBase2" parent="." instance=ExtResource("12_6v5lm")]
+
+[node name="building_E2" parent="." instance=ExtResource("13_0qdoe")]
+
+[node name="building_E_withoutBase2" parent="." instance=ExtResource("14_n1sx7")]
+
+[node name="building_F2" parent="." instance=ExtResource("15_xpgah")]
+
+[node name="building_F_withoutBase2" parent="." instance=ExtResource("16_kp2k4")]
+
+[node name="building_G2" parent="." instance=ExtResource("17_flwmx")]
+
+[node name="building_G_withoutBase2" parent="." instance=ExtResource("18_ln3b5")]
+
+[node name="building_H2" parent="." instance=ExtResource("19_ke17f")]
+
+[node name="building_H_withoutBase2" parent="." instance=ExtResource("20_scasr")]
+
+[node name="bush2" parent="." instance=ExtResource("21_ohrqs")]
+
+[node name="car_hatchback2" parent="." instance=ExtResource("22_n8afs")]
+
+[node name="car_police2" parent="." instance=ExtResource("23_5s4rq")]
+
+[node name="car_sedan2" parent="." instance=ExtResource("24_h4txs")]
+
+[node name="car_stationwagon2" parent="." instance=ExtResource("25_pfx2d")]
+
+[node name="car_taxi2" parent="." instance=ExtResource("26_r4fhx")]
+
+[node name="dumpster2" parent="." instance=ExtResource("27_fb6px")]
+
+[node name="firehydrant2" parent="." instance=ExtResource("28_2jpxt")]
+
+[node name="road_corner2" parent="." instance=ExtResource("29_3yeda")]
+
+[node name="road_corner_curved2" parent="." instance=ExtResource("30_4ikj5")]
+
+[node name="road_junction2" parent="." instance=ExtResource("31_2p0ii")]
+
+[node name="road_straight2" parent="." instance=ExtResource("32_igj1q")]
+
+[node name="road_straight_crossing2" parent="." instance=ExtResource("33_hht5d")]
+
+[node name="road_tsplit2" parent="." instance=ExtResource("34_wjm7x")]
+
+[node name="streetlight2" parent="." instance=ExtResource("35_kg3f7")]
+
+[node name="trafficlight_A2" parent="." instance=ExtResource("36_psvwu")]
+
+[node name="trafficlight_B2" parent="." instance=ExtResource("37_l7y04")]
+
+[node name="trafficlight_C2" parent="." instance=ExtResource("38_du000")]
+
+[node name="trash_A2" parent="." instance=ExtResource("39_ywqmc")]
+
+[node name="trash_B2" parent="." instance=ExtResource("40_uyaol")]
+
+[node name="watertower2" parent="." instance=ExtResource("41_13u0f")]

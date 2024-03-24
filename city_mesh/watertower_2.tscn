@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://4wsqhpslg3t8"]
+
+[ext_resource type="PackedScene" uid="uid://s8i8jjand3lf" path="res://addons/kaykit_city_builder_bits/Assets/gltf/watertower.gltf" id="1_lp4rd"]
+
+[node name="watertower2" instance=ExtResource("1_lp4rd")]
