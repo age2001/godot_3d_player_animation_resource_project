@@ -1,7 +1,8 @@
 extends CharacterBody3D
 
 @onready var animation_player : AnimationPlayer = $Pivot/LowPolyGirl/AnimationPlayer
-@onready var main_camera : Camera3D = $MainCamera
+@onready var camera_pivot :Node3D = $CameraPivot
+@onready var main_camera : Camera3D = $CameraPivot/MainCamera
 
 # TODO Change from export to const variables
 @export var MAX_WALK: float = 10.0 # Good walk is 2.6
@@ -27,6 +28,8 @@ var can_use_stamina = true
 var max_hunger = 100
 var hunger
 
+var mouse_sensitivity = 0.1
+
 var target_velocity = Vector3.ZERO
 
 # Called when the node enters the scene tree for the first time.
@@ -36,11 +39,21 @@ func _ready():
 	stamina = max_stamina
 	hunger = max_hunger
 
+func _input(event):
+	if event is InputEventMouseMotion:
+		rotate_y(deg_to_rad(-event.relative.x * mouse_sensitivity))
+		camera_pivot.rotate_x(deg_to_rad(-event.relative.y * mouse_sensitivity))
+	elif event.is_action_pressed("escape_key"):
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			#player_node.process_mode = Node.PROCESS_MODE_DISABLED
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			#player_node.process_mode = Node.PROCESS_MODE_INHERIT
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
-
 
 func _physics_process(delta):
 	var direction = Vector3.ZERO
@@ -99,7 +112,7 @@ func _physics_process(delta):
 		regenerate_stamina(delta)
 
 # ------------ USE HUNGER ----------
-	use_hunger(delta)
+	#use_hunger(delta)
 
 # ------------ APPLYING FINAL VELOCITY AND MOVING ----------
 	velocity = target_velocity

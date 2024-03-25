@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://d26teifdgjcjv"]
+[gd_scene load_steps=9 format=3 uid="uid://d26teifdgjcjv"]
 
 [ext_resource type="Script" path="res://player/player_body.gd" id="1_p1vi5"]
+[ext_resource type="PackedScene" uid="uid://c7slg3lkmxhhf" path="res://camera/main_camera.tscn" id="2_1eroo"]
 [ext_resource type="PackedScene" uid="uid://b5q3kswq1yxb2" path="res://player/low_poly_girl.tscn" id="2_nn7px"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g16h2"]
@@ -28,6 +29,10 @@ IDLE_ANIMATION_SPEED_SCALE = 0.5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_g16h2")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+
+[node name="MainCamera" parent="CameraPivot" instance=ExtResource("2_1eroo")]
 
 [node name="Pivot" type="Node3D" parent="."]
 
